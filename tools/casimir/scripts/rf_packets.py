@@ -217,7 +217,7 @@ class RfPacket(Packet):
 
 @dataclass
 class PollCommand(RfPacket):
-
+    
 
     def __post_init__(self):
         self.packet_type = RfPacketType.POLL_COMMAND
@@ -411,7 +411,7 @@ class NfcDepSelectResponse(RfPacket):
 
 @dataclass
 class SelectCommand(RfPacket):
-
+    
 
     def __post_init__(self):
         self.packet_type = RfPacketType.SELECT_COMMAND
